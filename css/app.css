@@ -1,0 +1,1063 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'Lato', 'Arial', 'Helvetica', 'sans-serif','Quantico';
+	color:white;
+	text-align: center;
+	font-size: 50px;
+}
+@font-face {
+    font-family: 'Quantico';
+    src:url(../font/Quantico-Regular-webfont.woff);
+}
+@font-face {
+    font-family: 'Lato';
+    src:url(../font/lato-regular-webfont.woff);
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+h2 {
+    position: absolute;
+    top: 95px;
+    left: 8%;
+    font-size: 72px;
+    letter-spacing: 22px;
+}
+ul,li,h1,h2,h3,h4,h5,h6,p{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#header{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+}
+.section{
+	box-sizing: border-box;
+	display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    min-height: 700px;
+}
+/*-----------------第一层----------------------------*/
+.section-1 {
+    position: relative;
+    overflow: hidden;
+    background: #191919;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*字体*/
+.tableCell {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+.section-1 .line-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: width 2s linear, height 2s ease-out 1.85s;
+    transition: width 2s linear, height 2s ease-out 1.85s;
+}
+#line1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#line2 {
+    position: fixed;
+    top: 100%;
+    right: -80px;
+    z-index: 5;
+}
+.section-1 h1 {
+    position: absolute;
+    top: 115px;
+    left: 8%;
+    z-index: 1;
+    width: 310px;
+    color: #fff;
+    font-family: 'Quantico', 'Arial', sans-serif;
+    font-size: 120px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 400;
+}
+.section-1 h1 small {
+    left: 6px;
+    opacity: 1;
+}
+.section-1 h1 small {
+    position: relative;
+    display: block;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.container {
+    position: relative;
+    left:-500px;
+    z-index: 1;
+    padding-left: 8%;
+    margin: 0;
+    margin-top: 240px;
+    margin-right: 40px;
+    opacity: 0;
+}
+.container .claim {
+    text-align: center;
+}
+.section-1 .claim h2 {
+    position: relative;
+    left: -80px;
+    top: auto;
+    opacity: 1;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-top: 0;
+    font-size: 72px;
+    -webkit-transition: all 1s ease 1s;
+    transition: all 1s ease 1s;
+}
+.section-1 .claim p {
+    position: relative;
+    left: -80px;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    -webkit-transition: all 1s ease 2s;
+    transition: all 1s ease 2s;
+}
+/*左侧标签图片*/
+.section-1 .badge {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -20px;
+}
+.one{
+	margin-left: -20px;
+}
+.section-1 .badge a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;		
+}
+.section-1 .background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    width: 3840px;
+    height: 113%;
+    margin-left: -1920px;
+    -webkit-transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    background: linear-gradient(to bottom,rgba(25,25,25,1) 0%,rgba(25,25,25,0) 50%),url(../image/bg_section1.jpg) top left;
+    -webkit-animation: section1 45s linear infinite;
+	animation: section1 45s linear infinite;
+}
+@keyframes section1{
+	0%{
+		background-position: 0% 0%,0% 0px;
+	}
+	100%{
+		background-position:0% 0%,0% -1200px; 
+	}
+}
+/*----小圆点-----*/
+#fp-nav{
+	bottom: 150%;
+}
+#fp-nav li{
+    display: block;
+    padding: 13px 0;
+}
+/*----------第二层---------------*/
+.section-2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 1200px;
+    background: url(../image/bg_section2.jpg) #eaeaea no-repeat;
+    background-position: 50% 0%;
+    color: #141414;
+    text-transform: uppercase;
+}
+.section-2 h2 {
+	position: absolute;
+    left:50px;
+    opacity: 1;
+    top: 95px;
+    font-size:72px;
+    letter-spacing: 18px;
+    text-align: left;
+    font-weight: normal;
+}
+h2 small {
+    display: block;
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+}
+.section-2 .text {
+    position: absolute;
+    bottom: 110px;
+    opacity: 0;
+    left:200px;
+    text-align: left;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 300;
+    -webkit-transition: all 1s 1.5s;
+    transition: all 1s 1.5s;
+    right: 200px;
+}
+.section-2 .text strong {
+    margin-top: 20px;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+}
+.section-2 .squares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+/*-------------------颜色框改变---------------------*/
+.section-2 .squery-1 {
+    position: absolute;
+    top: 670px;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-left: 140px;
+}
+.section-2 .squery-2 {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    width: 278px;
+    height: 278px;
+    margin-left: -60px;
+}
+.section-2 .squery-3 {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    width: 278px;
+    height: 278px;
+    margin-left: -350px;
+}
+.section-2 .squery-4 {
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    width: 210px;
+    height: 210px;
+    margin-left: 90px;
+}
+.section-2 .squery-5 {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-left: -960px;
+}
+/*-------------------颜色--------------------*/
+.section-2 .squares .line {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: red;	
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.section-2 .squares .line {
+    stroke-width: 12;
+    stroke-dasharray: 600;
+    stroke-miterlimit: 10;
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+.section-2 .squery-1 .line {
+    stroke: #d7d7d7;
+    -webkit-animation-delay: 2s;
+     animation-delay: 2s;
+}
+.section-2 .squery-2 .line {
+    stroke: #89D6F6;
+    -webkit-animation-delay: 1s;
+     animation-delay: 1s;
+}
+.section-2 .squery-3 .line {
+    stroke: #fff28c;
+    -webkit-animation-delay: 2s;
+     animation-delay: 2s;
+}
+.section-2 .squery-4 .line{
+    stroke: #ffc57c;
+    -webkit-animation-delay: 2s;
+     animation-delay: 2s;
+}
+.section-2 .squery-5 .line{
+    stroke: #89e6ba;
+    -webkit-transition-delay: 1.50s;
+    animation-delay:1.5s;
+}
+/*-----------------------线条动画------------------------------*/
+.section-2 .squares .line.bottom{
+	-webkit-transform: translate(100%,0);
+    transform: translate(100%,0);
+}
+.section-2 .squares .line.top{
+	-webkit-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+}
+.section-2 .squares .line.left{
+	-webkit-transform: translate(0,100%);
+    transform: translate(0,100%);
+}
+.section-2 .squares .line.right{
+	-webkit-transform: translate(0,-100%);
+    transform: translate(0,-100%);
+}
+@keyframes heng{
+	0%{
+		 -webkit-transform: translate(100%,0);
+         transform: translate(100%,0);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+@keyframes hengx{
+	0%{
+		 -webkit-transform: translate(100%,0);
+         transform: translate(100%,0);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+
+
+
+
+@keyframes heng1{
+	0%{
+		 -webkit-transform: translate(-100%,0);
+         transform: translate(-100%,0);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+@keyframes shu{
+	0%{
+		 -webkit-transform: translate(0,-100%);
+         transform: translate(0,-100%);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+@keyframes shu1{
+	0%{
+		 -webkit-transform: translate(0,100%);
+         transform: translate(0,100%);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+
+
+@keyframes heng1x{
+	0%{
+		 -webkit-transform: translate(-100%,0);
+         transform: translate(-100%,0);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+@keyframes shux{
+	0%{
+		 -webkit-transform: translate(0,-100%);
+         transform: translate(0,-100%);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+@keyframes shu1x{
+	0%{
+		 -webkit-transform: translate(0,100%);
+         transform: translate(0,100%);
+	}
+	100%{
+		-webkit-transform: translate(0,0);
+         transform: translate(0,0);
+	}
+}
+/*------------------------第三张------------------------*/
+.section-3{
+    text-transform: uppercase;
+	background: #000;
+}
+.fp-tablecell{
+	display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;   
+}
+.section-3 h2 {
+    left: 8%;
+    opacity: 1;
+    letter-spacing: 10px;
+    top: -60px; 
+    left: -100%;
+    color: #fff;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; 
+}
+.section-3 h3.side-header {
+    color: #fff;
+}
+.section-3 h2 small {
+    letter-spacing: 6px;
+}
+h3.side-header {
+    position: absolute;
+    top: -105px;    
+    color: #000;
+    width: 400px;
+    right:-360px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+.section-3 .list {
+    position: absolute;
+    top:15%;
+    bottom: 0;
+    width: 100%;
+}
+.section-3 .list > div {
+    position: relative;
+    height: 130px;
+    text-align: left;
+}
+.section-3 .list > div:nth-child(1) a {
+    border-top: 2px solid #202020;
+}
+.section-3 .list a:before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 1;
+    width: 150px;
+    height: 130px;
+    color: #fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 150px;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.section-3 .list a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0px;
+    height: 100%;
+    border-right: 2px solid #202020;
+    -webkit-transition: height 1s ease 0.75s;
+    transition: height 1s ease 0.75s;
+}
+.section-3 .list a {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 128px;
+    line-height: 150px;
+    border-bottom: 2px solid #202020;
+    color: #fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-transition: width 1.5s ease 1s;
+}
+.section-3 .list:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    height: 100%;
+    border-right: 1px solid #202020;
+    -webkit-transition: height 2s ease 1s;
+    transition: height 2s ease 1s;
+}
+.section-3 .list a span {
+    position: relative;
+    left: 50%;
+    z-index: 1;
+    opacity: 0;
+    letter-spacing: 10px;
+    -webkit-transition: all 1s ease 1s;
+    transition: all 1s ease 1s;
+}
+.section-3 .list div:nth-child(1) a span {
+    left: 95%;
+    transition: all 1s ease 1.7s;
+}
+.section-3 .list div:nth-child(2) a span {
+    left: 80%;
+    transition: all 1s ease 1.3s;
+}
+.section-3 .list div:nth-child(3) a span {
+    left: 78%;
+    transition: all 1s ease 0.9s;
+}
+.section-3 .list div:nth-child(4) a span {
+    left: 78%;
+    transition: all 1s ease 0.5s;
+}
+.section-3 .list > div:nth-child(2) a {
+    width: 0;
+    transition: all 1s ease 0.7s;
+}
+.section-3 .list > div:nth-child(3) a {
+    width: 0;
+    transition: all 1s ease 0.4s;
+}
+.section-3 .list > div:nth-child(4) a {
+    width: 0;
+    transition: all 1s ease 0.1s;
+}
+.section-3 .list .linel {
+    position: absolute;
+    top: 79px;
+    right: 12.5%;
+    width: 0;
+    border-top: 2px solid white;
+    -webkit-transition: width 1s ease;
+    transition: width 1s ease;
+}
+.section-3 .list div:nth-child(1) .linel {
+    width: 0;
+    border-color: #3d7b6c;
+    transition: all 1s ease 1.2s;
+}
+.section-3 .list div:nth-child(2) .linel {
+    width: 0;
+    border-color: #745995;
+    transition: all 1s ease 0.9s;
+}
+.section-3 .list div:nth-child(3) .linel {
+    width: 0;
+    border-color: #fff28c;
+    transition: all 1s ease 0.6s;
+}
+.section-3 .list div:nth-child(4) .linel {
+    width: 0;
+    border-color: #e58b8b;
+    transition: all 1s ease 0.3s;
+}
+
+/*---------------------------第四张页面---------------------------*/
+.grid{
+    width: 100%;
+    height: 80%;
+    margin-top: -200px;
+    position: relative;
+}
+.grid > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.section-4 ul {
+    height: 100%;
+    padding-top: 10%;
+    border-right: 1px solid #d7d7d7;
+}
+.section-4 ul li {
+    position: relative;
+    left:-100%;
+    padding-left: 150px;
+    transition:all 0.6s ease; 
+}
+.section-4 ul li:hover {
+    padding-left: 80px;
+    background: #ccc;
+    opacity: 0.5;
+}
+.section-4 ul li:before, .section-4 ul li:last-child:after {
+    width: 100%;
+}
+.section-4 ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid #d7d7d7;
+    -webkit-transition: width 1.5s ease;
+    transition: width 1.5s ease;
+}
+.section-4 ul li:last-child:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid #d7d7d7;
+    -webkit-transition: width 1.5s ease;
+    transition: width 1.5s ease;
+}
+.section-4 ul li a {
+    position: relative;
+    display: block;
+    opacity: 1;
+    text-align: left;
+    padding: 20px 0 20px 0;
+    color: #666;
+    font-family: 'Georgia';
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4.7px;
+    transition: all 0.5s;
+}
+.section-4 ul li a h3 {
+    margin-bottom: 20px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 12px;
+}
+.bigbox1{
+    width: 60%;
+    position: absolute; 
+    left:0px;
+    top:-30px;
+    height: 100%;
+   }
+.bigbox2 {
+    width: 40%;
+    position: absolute; 
+    top:-60px;
+    right:240px;
+    height: 100%;
+    opacity: 0;
+    padding-left: 100px;
+    transition: all 1s ease 2s;
+}
+.section-4 .bechance {
+    display: inline-block;
+    margin: 30px auto 10px;
+    color: #000;
+    font-size: 77px;
+    font-weight: 300;
+}
+.section-4 .bechance span {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    rotate-origin:center center;
+}
+.section-4 .bechance span:hover{
+    transform: rotateZ(90deg);
+}
+.section-4 .box {
+    position: relative;
+    margin-top: 13%;
+    margin-left: 20px;
+}
+.section-4 .box .badge {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    z-index: 1;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    border: 2px solid #000;
+    text-align: center;
+}
+.section-4 .box .badge img {
+    height: 100%;
+}
+.section-4 .box figure a {
+    display: block;
+    overflow: hidden;
+    max-width: 418px;
+    max-height: 338px;
+    margin: 0 auto;
+}
+.section-4 .box figure a img {
+    height: 210px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.section-4 .box figure a img:hover{
+    transform: scale(1.4,1.5);
+}
+.section-4 .box figure span {
+    position: absolute;
+    top: -40px;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 80px;
+    color: #666;
+    font-family: 'Georgia';
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+/*---------------------------第五张--------------------------*/
+.section-5 {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+.section-5 li {
+    position: relative;
+    text-align: center;
+}
+.section-5 li .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+.bigbox1 ul{
+    width: 100%;
+    height: 110%;
+    margin-top:-30px;
+}
+.clients{
+    width: 100%;
+    height: 70%;
+    background-position: 50% 60%;
+    overflow: hidden;
+}
+.clients .background{
+    width: 100%;
+    height: 100%;
+    background: url(../image/bg_section5_1.jpg);
+    background-position: 50% 20%;
+}
+.section-5 li.clients .header {
+    position: absolute;
+}
+.section-5 li.moscow{
+    height: 190px;
+    margin-top: -20px;
+    overflow: hidden;
+}
+.section-5 li.miami{
+    height: 180px;
+    margin-top: -30px;
+    overflow: hidden;
+}
+.section-5 li.clients .header {
+    position: absolute;
+    top: 94px;
+    left: 96px;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 21px;
+    text-align: left;
+}
+.section-5 li.clients p {
+    position: absolute;
+    bottom: 60px;
+    right: 180px;
+    opacity: 1;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.section-5 li.moscow .background {
+    height: 165px;
+    background: url(../image/bg_section5_2.jpg) top center;
+    background-size: cover;
+}
+.section-5 li .temp {
+    position: absolute;
+    top: 38px;
+    left: 125px;
+    display: block;
+    width: 110px;
+    height: 140px;
+    padding: 30px 16px;
+    border: 2px solid #4b4b4b;
+    font-size: 29px;
+    font-weight: 300;
+    text-align: center;
+}
+.section-5 li.miami .background {
+    height: 200px;
+    background: url(../image/bg_section5_3.jpg) top center;
+    background-size: cover;
+}
+.section-5 li .temp span {
+    font-family: 'Quantico';
+    font-size: 50px;
+}
+.section-5 li p {
+    position: absolute;
+    top:45%;
+    right: 120px;
+    opacity: 1;
+}
+.section-5 li.clients p {
+    bottom: 100px;
+}
+.section-5 li p {
+    position: absolute;
+    bottom: 60px;
+    right: 180px;
+    opacity: 0;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.section-5 .background:hover{
+    transform: translateZ(-40px) translateX(-30px);
+}
+.bigbox3{
+    width: 42%;
+    height:800px;
+    margin-top: -100px;
+    text-align: center;
+    position: absolute;
+    top:0;
+    right:0;
+    color:#000;
+    border-left:2px solid #fff;
+}
+.bigbox3 img{
+    position: absolute;
+    top:45%;
+    left:40%;
+}
+.bigbox3 .shum{
+    position: absolute;
+    top:55%;
+    left:35%;
+}
+/*--------------------第六张-----------------------*/
+.section-6 {
+    position: relative;
+    padding-right: 160px;
+}
+.section-6 h3{
+    right:-530px;
+}
+.section-6 .fp-tablecell{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 88.5%;
+    height: 100%;
+}
+.section-6 .box {
+    float: left;
+    width: 24.4%;
+    height: 100%;
+    padding-top: 25%;
+    border-right: 4px solid #fff;
+    line-height: 130px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.section-6 .side-header{
+    top:10px;
+}
+.section-6 .box.uptag {
+    background: #f8b1ac;
+}
+.section-6 .box.mydlov {
+    background: #cfc4dc;
+}
+.section-6 .box.cube {
+    background: #b8f0d6;
+}
+.section-6 .box.swierkowski {
+    background: #939393;
+}
+.section-6 .imon{
+    transition-delay: 0.5s;
+}
+.section-6 .imtw{
+    transition-delay: 1s;
+}
+.section-6 .imth{
+    transition-delay: 1.5s;
+}
+.section-6 .imfo{
+    transition-delay: 2s;
+}
+.section-6 .box img {
+    opacity: 0;
+}
+
+/*----------------------第七张----------------------------*/
+.section-7 {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background: #191919;
+    background: url(../image/bg_section7.jpg) center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.section-7 header {
+    position: absolute;
+    top: 0px;
+    padding-left: 8%;
+    letter-spacing: 10px;
+}
+.section-7 .link {
+    position: relative;
+    left: -80px;
+    opacity: 0;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 8px;
+    -webkit-transition: all 1.5s ease 1.5s;
+    transition: all 1.5s ease 1.5s;
+}
+.section-7 footer {
+    position: absolute;
+    padding-left: 8%;
+    bottom: 100px;
+    width: 100%;
+    text-align: right;
+}
+.section-7 header .year {
+    display: inline-block;
+    margin-right: 26px;
+    font-family: 'Quantico';
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.section-7 header .text {
+    position: relative;
+    font-size: 20px;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.section-7 footer .social {
+    width: calc(100% - 160px);
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section-7 footer .social a {
+    display: inline-block;
+    opacity: .6;
+    width: 52px;
+    height: 52px;
+    margin-right: 18px;
+    border: 3px solid #767676;
+    line-height: 40px;
+    text-align: center;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+.section-7 footer p {
+    position: absolute;
+    left:10%;
+    bottom: 0;
+    opacity: 0;
+    letter-spacing: 10px;
+    -webkit-transition: all 1s ease .75s;
+    transition: all 1s ease .75s;
+}
+.section-7 footer .social a img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
